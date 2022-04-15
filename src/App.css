@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Open+Sans:ital@1&family=Raleway:wght@100;400&display=swap');
+  
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #D3D3D3;
+}
+.container{   
+    max-width: 600px;
+    max-height: 600px;
+    overflow: scroll;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+/* student information */
+.student-list{
+    padding-top: 20px;
+    border-bottom: 1px solid #D3D3D3;
+    background: #fafafa;
+    padding-right:50px;
+    
+
+}
+.student-preview{  
+    display: grid;
+    grid-template-columns: 0.8fr 8fr 0.2fr;
+    grid-template-areas:
+    "image details button"
+    
+}
+
+.student-details{
+    font-family: 'Raleway', sans-serif;
+    grid-area:details;
+}
+.grade-expansion{
+    grid-area: button;
+}
+.btn-exp{
+    border:none;
+    font-size:40px;
+    color:#9c9a9a;
+    background:none;
+}
+.student-metadata{
+    padding: 20px;
+
+}
+.student-name{
+    padding-bottom: 10px;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    grid-area:image;
+   
+}
+
+.student-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border:  solid #D3D3D3;    
+}
+
+/* form */
+.search-input,.search-tag{
+    height:40px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b1afaf;
+    font: inherit;
+    z-index: 3;
+   
+}
+
+
+.search-input:hover{
+    border-bottom: 1px solid black;
+}
+
+/* tag field */
+.tag-input{
+    height:40px; 
+    width: 100%;
+    border: none;
+    background: inherit;
+    border-bottom: 1px solid #b1afaf;
+    font: inherit;
+}
+.tag-input:hover{
+    border-bottom: 1px solid black;
+}
+.test-details{
+    white-space: pre;   
+}
+
+.tag-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.tag{
+    padding:5px;
+    background: #D3D3D3;;
+}
